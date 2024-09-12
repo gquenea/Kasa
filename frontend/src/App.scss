@@ -1,0 +1,16 @@
+.app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+
+}
+
+body {
+    margin: 0;
+}
