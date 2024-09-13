@@ -1,7 +1,7 @@
 .card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Ajuste les colonnes en fonction de la taille de l'écran
-    gap: 20px; // Espacement entre les cartes
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
     padding: 50px;
     background-color: #F6F6F6;
     border-radius: 25px;
@@ -12,7 +12,7 @@
       width: 100%;
       height: 400px;
       box-sizing: border-box;
-      border-radius: 10px; // Coins arrondis
+      border-radius: 10px;
   
       &::before {
         content: "";

@@ -1,22 +1,23 @@
 .banner {
     margin: 50px 0;
     position: relative;
-    height: 200px;
+    height: 250px;
 
     img {
         width: 100%;
         border-radius: 30px;
         object-fit: cover;
-        box-shadow: 0px 4px 4px 0px #00000040;
+        box-shadow: 0px 4px 4px 0px #00000000;
         height: 100%;
         filter: brightness(50%);
     }
 
     h1 {
         position: absolute;
+        width: 100%;
         font-size: 48px;
         top: 50%;
-        left: 50%;
+        left: 75%;
         transform: translate(-50%, -50%);
         color: red;
         margin: 0;
