@@ -8,13 +8,16 @@ export default function About() {
   return (
     <div className="about">
       <Banner imgSrc={aboutBanner} />
-      {DropdownData.map((data, index) => (
-        <Dropdown className="dropdown-item"
-          key={index}
-          title={data.aboutDropdownTitle}
-          content={data.aboutDropdownContent}
-        />
-      ))}
+      <div className="dropdowns-container">
+        {DropdownData.map((data, index) => (
+          <Dropdown
+            className="dropdown-item"
+            key={index}
+            title={data.aboutDropdownTitle}
+            content={data.aboutDropdownContent}
+          />
+        ))}
+      </div>
     </div>
   );
 }

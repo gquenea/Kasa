@@ -1,20 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%; // Prendre toute la hauteur de la fenêtre
+}
 
 .app {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 30px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Prendre toute la hauteur de la fenêtre
+}
+
+.wrapper {
+  flex: 1; // Permet à la partie principale de remplir l'espace disponible
 }
 
 .main-container {
-    width: 100%;
-    max-width: 1440px;
-
+  max-width: 1440px;
+  margin: 0 auto; // Centre horizontalement
+  padding: 20px; // Padding si nécessaire
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  width: 100%; // Prend toute la largeur
+  flex-shrink: 0; // Évite le rétrécissement
 }

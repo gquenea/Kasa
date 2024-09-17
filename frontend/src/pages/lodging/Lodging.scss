@@ -1,0 +1,73 @@
+.lodging {
+
+    .title-and-host {
+        display: flex;
+        justify-content: space-between;
+
+        .title{
+
+            h1{
+                color: #FF6060;
+                font-size: 36px;
+                margin: 0;
+            }
+
+            p{
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+
+        .host{
+            display: flex;
+            text-align: right;
+
+            p{
+                color: #FF6060;
+                font-size: 22px;
+            }
+
+            img{
+                border-radius: 50%;
+                height: 100px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .tags-and-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .tags{
+
+            ul{
+                list-style-type: none;
+                display: flex;
+                gap: 20px;
+                padding: 0;
+
+                li{
+                    text-decoration: none;
+                    background-color: #FF6060;
+                    color: white;
+                    border-radius: 25px;
+                    padding: 8px 40px;
+                    font-weight: bold;
+                }
+
+            }
+        }
+    }
+
+    .dropdowns {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+
+        .dropdown{
+            width: 100%;
+        }
+    }
+}
