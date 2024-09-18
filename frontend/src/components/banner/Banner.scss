@@ -14,14 +14,27 @@
 
     h1 {
         position: absolute;
-        width: 100%;
         font-size: 48px;
         top: 50%;
-        left: 75%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        color: red;
-        margin: 0;
         color: white;
+        margin: 0;
+        text-align: center;
+        white-space: nowrap;
     }
 }
 
+
+@media (max-width: 768px) {
+    .banner {
+        height: 150px;
+      
+        h1{
+            text-align: left;
+            left: 36%;
+            white-space: initial;
+            font-size: 36px;
+        }
+    }
+  }

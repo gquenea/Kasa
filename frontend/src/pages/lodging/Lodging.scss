@@ -1,7 +1,13 @@
 .lodging {
 
-    .title-and-host {
+    .under-carrousel-description{
         display: flex;
+        justify-content: space-between;
+    
+
+    .title-and-tags {
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
 
         .title{
@@ -17,6 +23,35 @@
                 font-size: 20px;
             }
         }
+    }
+
+        .tags{
+
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 0;
+                margin-bottom: 0;
+
+                li{
+                    text-decoration: none;
+                    background-color: #FF6060;
+                    color: white;
+                    border-radius: 25px;
+                    padding: 8px 40px;
+                    font-weight: bold;
+                }
+
+            }
+    }
+
+    .host-and-rating {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
 
         .host{
             display: flex;
@@ -34,32 +69,7 @@
             }
         }
     }
-
-    .tags-and-rating {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .tags{
-
-            ul{
-                list-style-type: none;
-                display: flex;
-                gap: 20px;
-                padding: 0;
-
-                li{
-                    text-decoration: none;
-                    background-color: #FF6060;
-                    color: white;
-                    border-radius: 25px;
-                    padding: 8px 40px;
-                    font-weight: bold;
-                }
-
-            }
-        }
-    }
+}
 
     .dropdowns {
         display: flex;
@@ -71,3 +81,25 @@
         }
     }
 }
+
+
+@media (max-width: 799px) {
+    .lodging {
+
+        .under-carrousel-description{
+            display: flex;
+            flex-direction: column;
+
+            .host-and-rating{
+                flex-direction: row-reverse;
+                align-items: center;
+                margin-top: 20px;
+            }
+        }
+
+        .dropdowns{
+            flex-direction: column;
+            gap: 0px;
+        }
+    }
+  }

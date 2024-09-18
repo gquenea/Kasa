@@ -28,3 +28,21 @@
     }
     
 }
+
+@media (max-width: 600px) {
+    .header {
+      
+        img {
+            width: 120px;
+        }
+
+        ul{
+            gap: 20px;
+            padding: 0;
+        }
+
+        li{
+            font-size: 20px;
+        }
+    }
+  }

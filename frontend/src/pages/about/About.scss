@@ -10,3 +10,13 @@
         width: 80%;
     }
 }
+
+@media (max-width: 600px) {
+    .about {
+      
+        .dropdowns-container {
+            max-width: 100%;
+        }
+        
+    }
+  }

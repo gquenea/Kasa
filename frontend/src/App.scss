@@ -4,32 +4,33 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
 }
 
 html, body {
-  height: 100%; // Prendre toute la hauteur de la fenêtre
+  height: 100%;
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; // Prendre toute la hauteur de la fenêtre
+  min-height: 100vh;
 }
 
 .wrapper {
-  flex: 1; // Permet à la partie principale de remplir l'espace disponible
+  flex: 1;
 }
 
 .main-container {
   max-width: 1440px;
-  margin: 0 auto; // Centre horizontalement
-  padding: 20px; // Padding si nécessaire
+  margin: 0 auto;
+  padding: 20px;
 }
 
 footer {
   background-color: #f8f9fa;
   padding: 20px;
   text-align: center;
-  width: 100%; // Prend toute la largeur
-  flex-shrink: 0; // Évite le rétrécissement
+  width: 100%;
+  flex-shrink: 0;
 }

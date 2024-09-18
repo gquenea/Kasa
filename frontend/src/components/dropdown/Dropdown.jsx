@@ -21,7 +21,7 @@ export default function Dropdown({ title, content }) {
       </div>
       {isOpen && (
         <div className={`dropdown-content ${isOpen ? "open" : ""}`}>
-          <p>{content}</p>
+          <div>{content}</div>
         </div>
       )}
     </div>

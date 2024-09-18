@@ -1,21 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Card.scss";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { PropertyContext } from "../../context/PropertyContext";
 
 export default function Card() {
-  const [properties, setProperties] = useState([]);
-
-  useEffect(() => {
-    // Fetch des données depuis l'API
-    fetch("http://localhost:8080/api/properties")
-      .then((response) => response.json())
-      .then((data) => {
-        setProperties(data); // Stocker les propriétés dans le state
-      })
-      .catch((error) => {
-        console.error("Erreur lors du fetch des propriétés:", error);
-      });
-  }, []);
+  const properties = useContext(PropertyContext);
 
   return (
     <div className="card-list">

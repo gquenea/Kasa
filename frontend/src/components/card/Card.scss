@@ -37,29 +37,30 @@
         position: absolute;
         top: 80%;
         left: 15px;
-        margin: 0; // Correction de la propriété margin
+        margin: 0;
         color: white;
         z-index: 2;
       }
     }
   }
   
-  // Media Queries pour ajuster le nombre d'images par ligne
   @media (min-width: 1200px) {
     .card-list {
-      grid-template-columns: repeat(3, 1fr); // 3 cartes par ligne
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   
   @media (min-width: 800px) and (max-width: 1199px) {
     .card-list {
-      grid-template-columns: repeat(2, 1fr); // 2 cartes par ligne
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (max-width: 799px) {
     .card-list {
-      grid-template-columns: 1fr; // 1 carte par ligne
+      grid-template-columns: 1fr;
+      padding: 50px 0;
+      background-color: transparent;
     }
   }
   
